@@ -27,5 +27,6 @@ jobs:
       - name: Trigger Jenkins Job
         if: github.event.pull_request.merged == true
         run: |
+          print("jenkins job in workflow "merge_to_master.yml"
           # Use curl or any other method to trigger the Jenkins job
-          curl -X POST http://jenkins-url/job/job-name/build
+#          curl -X POST http://jenkins-url/job/job-name/build
