@@ -3,7 +3,7 @@ name: Merge to Master and Trigger Jenkins Job
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   merge_and_trigger_jenkins_job:
