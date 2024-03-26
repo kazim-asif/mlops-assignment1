@@ -1,4 +1,4 @@
-name: Merge to Master and Trigger Jenkins Job
+name: Merge to main and Trigger Jenkins Job
 
 on:
   pull_request:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   merge_and_trigger_jenkins_job:
-    name: Merge to Master and Trigger Jenkins Job
+    name: Merge to main and Trigger Jenkins Job
     runs-on: ubuntu-latest
 
     steps:
