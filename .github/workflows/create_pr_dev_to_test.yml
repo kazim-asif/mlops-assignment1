@@ -1,0 +1,23 @@
+name: Create Pull Request from Dev to Test Branch
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Automated pull request creation from dev to test"
+          title: "Automated pull request from dev to test"
+          branch: test
+          body: "This pull request was automatically created when a specific feature was completed and pushed to the dev branch."

@@ -1,0 +1,20 @@
+name: Merge to Master and Trigger Jenkins Job
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  merge_and_trigger_jenkins_job:
+    name: Merge to Master and Trigger Jenkins Job
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Trigger Jenkins Job
+      run: |
+        # Use curl or any other method to trigger the Jenkins job
+#        curl -X POST http://jenkins-url/job/job-name/build
