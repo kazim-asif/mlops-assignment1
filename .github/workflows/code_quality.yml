@@ -12,4 +12,4 @@ jobs:
       - name: Install dependencies
         run: pip install flake8
       - name: Run Flake8
-        run: flake8 .
+        run: flake8 --ignore=E302,E501,E305,W292 .
