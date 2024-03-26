@@ -1,7 +1,7 @@
 name: Merge to Master and Trigger Jenkins Job
 
 on:
-  pull_request:
+  push:
     branches:
       - master
 
