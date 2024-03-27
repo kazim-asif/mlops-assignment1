@@ -4,7 +4,6 @@ from modelBuild import melbourne_data, melbourne_features
 import pandas as pd
 import joblib
 
-
 class TestFlaskApp(unittest.TestCase):
     def setUp(self):
         self.app = app.test_client()
