@@ -52,5 +52,6 @@ class TestModel(unittest.TestCase):
         self.assertTrue('Price' in melbourne_data.columns)  # 'Price' column should be present
         self.assertEqual(len(melbourne_features), 5)  # Expected number of features
 
+
 if __name__ == '__main__':
     unittest.main()
